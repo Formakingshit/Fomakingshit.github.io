@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>P.I.</title>
+  <meta charset="UTF-8">
+  <title>Form</title>
 </head>
+
 <body>
-<h1>Personal information</h1>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+<div>
+  <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
     <div>
-        <fieldset>
-            <legend>Personal information</legend>
-            <label>
-                <span>Surname: </span>
-                <input type="text" name="surname" required>
-            </label><br>
-            <label>
-                <span>Name: </span>
-                <input type="text" name="name">
-            </label><br>
-            <label>
-                <span>How old are You?: </span>
-                <input type="text" name="age">
-            </label><br>
-            <label>
-                <span>Full date of birth: </span>
-                <input type="date" name="date"  >
-            </label><br>
-            <label>
-                <span>I accept the terms of the agreement </span>
-                <input type="checkbox" name="accept" required>
-            </label><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>Regestration</legend>
-            <label>
-                <span>Email</span>
-                <input type="email" name="email">
-            </label><br>
-            <label>
-                <span>Password</span>
-                <input type="password" name="password">
-            </label><br>
-        </fieldset>
-
-        <fieldset>
-            <legend>An interesting fact about you!</legend>
-
-            <span>Do you love cats?</span><br>
-            <label>
-                <input type="radio" name="cats" value="yes">Yes<br>
-            </label>
-            <label>
-                <input type="radio" name="cats" value="no">No<br>
-            </label>
-            <label>
-                <span>What is your favorite color?</span><br>
-                <input type="color" name="color">
-            </label><br>
-            <label>
-                <span>What time do you go to bed?</span><br>
-                <input type="time" name="bed_time">
-            </label><br>
-            <label>
-                <span>What you favorite brand of cars?</span><br>
-                <select name="cars" size="4">
-                    <option value="BMW">BMW</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Lada" selected>Lada</option>
-                </select>
-            </label><br>
-            <label>
-                <span>How do you rate our work?</span><br>
-                <input type="range" name="rate" min="1" max="10">
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Your comments:</legend>
-            <textarea name="comment" placeholder="Comments" maxlength="2"></textarea>
-        </fieldset>
-
-        <button>Submit</button>
+      <fieldset name="info">
+        <legend>Personal Information</legend>
+        <p>
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname">
+        </p>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="old">How old are You?:</label>
+          <input type="text" id="old" name="old" size="5">
+        </p>
+        <p>
+          <label for="date">Full date of birth:</label>
+          <input type="date" id="date" name="date">
+        </p>
+        <p>
+          <label for="agreement">I accept the terms of the agreement</label>
+          <input type="checkbox" id="agreement" name="agreement">
+        </p>
+      </fieldset>
     </div>
-</form>
+
+    <div>
+      <fieldset name="reg">
+        <legend>Registration</legend>
+        <p>
+          <label for="e-mail">E-mail</label>
+          <input type="text" id="e-mail" name="e-mail">
+        </p>
+        <p>
+          <label for="pass">Password</label>
+          <input type="password" id="pass" name="pass">
+        </p>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset name="fact">
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <div>
+          <input type="radio" id="catYes" name="cats">
+          <label for="catYes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="catNo" name="cats">
+          <label for="catNo">No</label>
+        </div>
+        <div>
+          <label for="color">What is your favorite color?</label>
+          <div>
+            <input type="color" id="color" name="time">
+          </div>
+        </div>
+        <div>
+          <label for="time">What time do you go to bed?</label><br>
+          <div>
+            <input type="time" id="time" name="time">
+          </div>
+        </div>
+        <div>
+          <label for="selectCar">What is your favorite brand of cars?</label>
+          <div>
+            <select id="selectCar" name="selectCar">
+              <option>BMW</option>
+              <option>Audi</option>
+              <option selected>Lada</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="rate">How do you rate our work?</label><br>
+          <div>
+            <input type="range" id="rate" name="rate" min="1" max="100" value="40">
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset name="comment">
+        <legend>Your comments:</legend>
+        <textarea name="comments" placeholder="Comments" maxlength="100"></textarea>
+      </fieldset>
+    </div>
+
+    <div>
+      <p>
+        <button name="button">Submit</button>
+      </p>
+    </div>
+  </form>
+</div>
 </body>
 </html>
