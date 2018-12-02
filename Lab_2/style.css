@@ -168,7 +168,7 @@ body {
   content: "";
   height: 2px;
   vertical-align: middle;
-  width: 290px;
+  width: 260px;
   margin-top: 20px;
 }
 
@@ -206,27 +206,19 @@ body {
   display: inline;
 }
 
-.imgSupport{
+.imgSupport {
   display: inline;
-}
-
-.lineSupport {
-  background-color: #e9e9ea;
-  content: "";
-  height: 2px;
-  width: 590px;
-  margin-top: 20px;
 }
 
 .textSupport {
   margin-top: 20px;
 }
 
- .buttonSupport {
+.buttonSupport {
   margin-top: 35px;
 }
 
-.buttonSupport .bTemplate{
+#container4 .bTemplate {
   background: #d2d5da;
   color: #f5f5f5;
 }
@@ -235,17 +227,111 @@ body {
   height: 440px;
   width: 800px;
   margin: auto;
-  background: #f5f5f5;
+  background: #f5f5f5
 }
 
 .checkThis {
   margin-top: 30px;
 }
 
-.checkThis a{
+.checkThis a {
   text-decoration: none;
-  font-family: ﻿PTSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: ﻿PTSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, serif;
   font-size: 16px;
   color: rgba(80, 195, 175, 255);
+}
 
+#container6 {
+  height: 340px;
+  width: 800px;
+  margin: auto;
+  background: #eeeeef;
+}
+
+#container6 .lineTemplate {
+  background: #e7e7e9;
+}
+
+#container7 {
+  height: 340px;
+  width: 800px;
+  margin: auto;
+  background: #f5f5f5
+}
+
+.fam {
+  width: 320px;
+  float: left;
+}
+
+.fam:last-child {
+  float: right;
+}
+
+#container7 .bTemplate {
+  background: #d2d5da;
+  color: #f5f5f5;
+}
+
+#container8 {
+  height: 180px;
+  width: 800px;
+  margin: auto;
+  background: #50c3af;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.hWasFeatured {
+  display: inline;
+  font-family: ﻿PTSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 255);
+}
+
+#container8 .lineItem {
+  display: block;
+  width: 320px;
+  background: #61c8b6;
+  margin: 40px auto;
+}
+
+#container9 {
+  height: 40px;
+  width: 800px;
+  margin: auto;
+  background: #f5f5f5;
+  padding-top: 15px;
+}
+
+.contentFooter{
+  margin: 5px auto;
+  width: 600px;
+
+}
+
+.elemFooter:first-child {
+  font-family: ﻿PTSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, serif;
+  font-size: 13px;
+  color: rgba(120, 123, 128, 255);
+  text-align: right;
+  float: left;
+}
+
+.elemFooter:last-child {
+  margin-top: -16px;
+  float: right;
+}
+
+.h{
+  font-weight: bold;
+  font-family: ﻿PTSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, serif;
+  font-size: 15px;
+  color: rgba(56, 64, 72, 255);
+}
+
+.text{
+  font-family: ﻿PTSans-Regular, ﻿AdobeInvisFont, ﻿MyriadPro-Regular, serif;
+  font-size: 14px;
+  color: rgba(120, 123, 128, 255);
 }
